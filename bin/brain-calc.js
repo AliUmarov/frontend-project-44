@@ -1,32 +1,30 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
+import { greeting, name } from '../src/index.js';
 
-function calculator() {
-  const symbol = ['+', '-', '*'];
-  let SCORE = 0;
-
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello ${name}`);
+function calculator(symbol) {
+  greeting();
   console.log('What is the result of the expression?');
+
+  let SCORE = 0;
   for (let i = 0; i < 3; i += 1) {
     const firstOperand = (Math.round(Math.random() * 5));
     const secondOperand = (Math.round(Math.random() * 10));
-    const randomSymbol = Math.floor(Math.random() * symbol.length);
-    const operation = symbol[randomSymbol];
+    const operation = symbol[Math.floor(Math.random() * symbol.length)];
+
     let correctAnswer;
     switch (operation) {
       case '+':
-        correctAnswer = Math.abs(firstOperand + secondOperand);
+        correctAnswer = firstOperand + secondOperand;
         break;
       case '-':
         correctAnswer = Math.abs(firstOperand - secondOperand);
         break;
       case '*':
-        correctAnswer = Math.abs(firstOperand * secondOperand);
+        correctAnswer = firstOperand * secondOperand;
         break;
       default:
-        return 0;
+        return null;
     }
     const answer = readlineSync.question(`Question: ${firstOperand} ${operation} ${secondOperand} `);
     console.log(`Your answer: ${answer}`);
@@ -44,4 +42,4 @@ function calculator() {
   return SCORE === 3 ? console.log(`Congratulations, ${name}`) : '';
 }
 
-calculator();
+calculator(['+', '-', '*']);
