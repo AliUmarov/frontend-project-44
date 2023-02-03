@@ -8,16 +8,16 @@ function whatNumberIsLost() {
   let SCORE = 0;
   let list = [];
   for (let i = 0; i < 3; i += 1) {
-    for (let k = 1; k < 10; k += 1) {
+    for (let k = 1; k <= 10; k += 1) {
       list.push(k);
     }
-    const index = Math.round(Math.random() * 9);
+    const index = Math.round(Math.random() * 10);
     const number = list.splice(index, 1, '...');
     const answer = readlineSync.question(`Question: ${list} `);
     if (!Number(answer)) {
       return console.log('Incorrect input! Answer must be a number!');
     }
-    if (answer === number.join('')) {
+    if (answer === number.join(' ')) {
       console.log('Correct!');
       console.log(`Your answer ${answer}`);
       SCORE += 1;

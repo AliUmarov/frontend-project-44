@@ -5,4 +5,6 @@
 
   https://asciinema.org/a/YXa7334djo6Cw6ieYlmAAQCAl - "calculator" game
 
-  https://asciinema.org/a/5YDVYD5g7mJlwrhD3qLokqWn3 - "find gcd" game  
+  https://asciinema.org/a/5YDVYD5g7mJlwrhD3qLokqWn3 - "find gcd" game
+
+  https://asciinema.org/a/XrBGGErG2c1UoWfNzbSgBLrwi - "progression" game  
