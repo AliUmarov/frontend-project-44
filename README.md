@@ -3,4 +3,6 @@
 
   https://asciinema.org/a/K36uRBmviIP6WulqcvHOg4GnY - "even or not" game
 
-  https://asciinema.org/a/YXa7334djo6Cw6ieYlmAAQCAl - "calculator" game 
+  https://asciinema.org/a/YXa7334djo6Cw6ieYlmAAQCAl - "calculator" game
+
+  https://asciinema.org/a/5YDVYD5g7mJlwrhD3qLokqWn3 - "find gcd" game  

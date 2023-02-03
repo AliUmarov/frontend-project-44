@@ -29,7 +29,7 @@ function calculator(symbol) {
     const answer = readlineSync.question(`Question: ${firstOperand} ${operation} ${secondOperand} `);
     console.log(`Your answer: ${answer}`);
     if (!Number(answer)) {
-      return console.log('Incorrect input! Please, try again!');
+      return console.log('Incorrect input! Answer must be a number!');
     }
     if (Number(answer) === correctAnswer) {
       console.log('Correct!');

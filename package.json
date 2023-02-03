@@ -9,8 +9,9 @@
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even":  "bin/brain-even.js",
-    "brain-calc":  "bin/brain-calc.js"
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,8 @@
   "devDependencies": {
     "eslint": "^8.32.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5"
+    "eslint-plugin-import": "^2.27.5",
+    "gcd": "^0.0.1",
+    "prettier": "^2.8.3"
   }
 }
