@@ -4,7 +4,7 @@ import { greeting, name } from '../src/index.js';
 
 function whatNumberIsLost() {
   greeting();
-
+  console.log('What number is missing in the progression?');
   let SCORE = 0;
   let list = [];
   for (let i = 0; i < 3; i += 1) {
