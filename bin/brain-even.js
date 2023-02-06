@@ -24,7 +24,7 @@ function evenOrNot() {
     }
   }
 
-  return count === 3 ? console.log(`Congratulations, ${name}`) : '';
+  return count === 3 ? console.log(`Congratulations, ${name}!`) : '';
 }
 
 evenOrNot();

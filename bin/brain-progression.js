@@ -27,7 +27,7 @@ function whatNumberIsLost() {
       return console.log(`Let's try again, ${name}!`);
     }
   }
-  return SCORE === 3 ? console.log(`Congratulations, ${name}`) : '';
+  return SCORE === 3 ? console.log(`Congratulations, ${name}!`) : '';
 }
 
 whatNumberIsLost();
