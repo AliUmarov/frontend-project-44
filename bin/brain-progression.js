@@ -13,7 +13,7 @@ function whatNumberIsLost() {
     }
     const index = Math.round(Math.random() * 10);
     const number = list.splice(index, 1, '..');
-    const answer = readlineSync.question(`Question: ${list} `);
+    const answer = readlineSync.question(`Question: ${list.join(' ')} `);
     if (!Number(answer)) {
       return console.log('Incorrect input! Answer must be a number!');
     }
