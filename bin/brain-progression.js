@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { greeting, name } from '../src/index.js';
 import readlineSync from 'readline-sync';
+import { greeting, name } from '../src/index.js';
 
 function whatNumberIsLost() {
   greeting();
@@ -8,7 +8,7 @@ function whatNumberIsLost() {
   let SCORE = 0;
   let list = [];
   for (let i = 0; i < 3; i += 1) {
-    for (let k = 1; k <= 10; k += 1) {
+    for (let k = 1, min = 20; k <= min; k += 2) {
       list.push(k);
     }
     const index = Math.round(Math.random() * 10);
