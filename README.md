@@ -7,4 +7,6 @@
 
   https://asciinema.org/a/5YDVYD5g7mJlwrhD3qLokqWn3 - "find gcd" game
 
-  https://asciinema.org/a/XrBGGErG2c1UoWfNzbSgBLrwi - "progression" game  
+  https://asciinema.org/a/XrBGGErG2c1UoWfNzbSgBLrwi - "progression" game
+
+  https://asciinema.org/a/qJjn7Eci2Amhb4zNo1a7Cbuc8 - "prime" - game  
