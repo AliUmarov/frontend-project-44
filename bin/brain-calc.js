@@ -18,7 +18,7 @@ function calculator(symbol) {
         correctAnswer = firstOperand + secondOperand;
         break;
       case '-':
-        correctAnswer = Math.abs(firstOperand - secondOperand);
+        correctAnswer = firstOperand - secondOperand;
         break;
       case '*':
         correctAnswer = firstOperand * secondOperand;
