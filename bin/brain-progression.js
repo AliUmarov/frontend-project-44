@@ -9,7 +9,7 @@ function whatNumberIsLost() {
   let SCORE = 0;
   const list = [];
   for (let i = 0; i < 3; i += 1) {
-    for (let k = 1, min = 20; k <= min; k += 2) {
+    for (let k = 1, min = 22; k <= min; k += 2) {
       list.push(k);
     }
     const index = Math.round(Math.random() * 10);
