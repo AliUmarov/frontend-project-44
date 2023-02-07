@@ -1,19 +1,19 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import gcd from 'gcd';
-import { greeting, name } from '../src/index.js';
 
 function findNOD() {
-  greeting();
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}`);
   console.log('Find the greatest common divisor of given numbers.');
 
   let SCORE = 0;
   for (let i = 0; i < 3; i += 1) {
-    let correctAnswer;
     const firstNum = Math.round(Math.random() * 10);
     const secondNum = Math.round(Math.random() * 15);
     const answer = readlineSync.question(`Question: ${firstNum} ${secondNum} `);
-    correctAnswer = gcd(firstNum, secondNum);
+    const correctAnswer = gcd(firstNum, secondNum);
     if (!Number(answer)) {
       return console.log('Incorrect input! Answer must be a number!');
     }

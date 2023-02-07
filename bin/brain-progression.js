@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { greeting, name } from '../src/index.js';
 
 function whatNumberIsLost() {
-  greeting();
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}`);
   console.log('What number is missing in the progression?');
   let SCORE = 0;
-  let list = [];
+  const list = [];
   for (let i = 0; i < 3; i += 1) {
     for (let k = 1, min = 20; k <= min; k += 2) {
       list.push(k);
